@@ -9,10 +9,13 @@
 /* Begin PBXBuildFile section */
 		348BBB401FB795C4009AEFEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348BBB3F1FB795C4009AEFEA /* AppDelegate.swift */; };
 		348BBB421FB795C4009AEFEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348BBB411FB795C4009AEFEA /* ViewController.swift */; };
-		348BBB451FB795C4009AEFEA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 348BBB431FB795C4009AEFEA /* Main.storyboard */; };
 		348BBB471FB795C4009AEFEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 348BBB461FB795C4009AEFEA /* Assets.xcassets */; };
 		348BBB4A1FB795C4009AEFEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 348BBB481FB795C4009AEFEA /* LaunchScreen.storyboard */; };
 		348BBB551FB795C4009AEFEA /* scratchMMVC2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348BBB541FB795C4009AEFEA /* scratchMMVC2Tests.swift */; };
+		348BBB611FB7970A009AEFEA /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348BBB601FB7970A009AEFEA /* MainViewController.swift */; };
+		348BBB631FB7984E009AEFEA /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348BBB621FB7984E009AEFEA /* MessageViewController.swift */; };
+		348BBB651FB79AAE009AEFEA /* MessageViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348BBB641FB79AAE009AEFEA /* MessageViewControllerDelegate.swift */; };
+		348BBB671FB79C18009AEFEA /* MessageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 348BBB661FB79C18009AEFEA /* MessageViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,13 +32,16 @@
 		348BBB3C1FB795C4009AEFEA /* scratchMMVC2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = scratchMMVC2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		348BBB3F1FB795C4009AEFEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		348BBB411FB795C4009AEFEA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		348BBB441FB795C4009AEFEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		348BBB461FB795C4009AEFEA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		348BBB491FB795C4009AEFEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		348BBB4B1FB795C4009AEFEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		348BBB501FB795C4009AEFEA /* scratchMMVC2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = scratchMMVC2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		348BBB541FB795C4009AEFEA /* scratchMMVC2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scratchMMVC2Tests.swift; sourceTree = "<group>"; };
 		348BBB561FB795C4009AEFEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		348BBB601FB7970A009AEFEA /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		348BBB621FB7984E009AEFEA /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		348BBB641FB79AAE009AEFEA /* MessageViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewControllerDelegate.swift; sourceTree = "<group>"; };
+		348BBB661FB79C18009AEFEA /* MessageViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,9 +83,9 @@
 		348BBB3E1FB795C4009AEFEA /* scratchMMVC2 */ = {
 			isa = PBXGroup;
 			children = (
+				348BBB5F1FB796E8009AEFEA /* View Controllers */,
 				348BBB3F1FB795C4009AEFEA /* AppDelegate.swift */,
 				348BBB411FB795C4009AEFEA /* ViewController.swift */,
-				348BBB431FB795C4009AEFEA /* Main.storyboard */,
 				348BBB461FB795C4009AEFEA /* Assets.xcassets */,
 				348BBB481FB795C4009AEFEA /* LaunchScreen.storyboard */,
 				348BBB4B1FB795C4009AEFEA /* Info.plist */,
@@ -94,6 +100,17 @@
 				348BBB561FB795C4009AEFEA /* Info.plist */,
 			);
 			path = scratchMMVC2Tests;
+			sourceTree = "<group>";
+		};
+		348BBB5F1FB796E8009AEFEA /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				348BBB601FB7970A009AEFEA /* MainViewController.swift */,
+				348BBB621FB7984E009AEFEA /* MessageViewController.swift */,
+				348BBB661FB79C18009AEFEA /* MessageViewController.xib */,
+				348BBB641FB79AAE009AEFEA /* MessageViewControllerDelegate.swift */,
+			);
+			path = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,7 +198,7 @@
 			files = (
 				348BBB4A1FB795C4009AEFEA /* LaunchScreen.storyboard in Resources */,
 				348BBB471FB795C4009AEFEA /* Assets.xcassets in Resources */,
-				348BBB451FB795C4009AEFEA /* Main.storyboard in Resources */,
+				348BBB671FB79C18009AEFEA /* MessageViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -199,7 +216,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				348BBB651FB79AAE009AEFEA /* MessageViewControllerDelegate.swift in Sources */,
+				348BBB611FB7970A009AEFEA /* MainViewController.swift in Sources */,
 				348BBB421FB795C4009AEFEA /* ViewController.swift in Sources */,
+				348BBB631FB7984E009AEFEA /* MessageViewController.swift in Sources */,
 				348BBB401FB795C4009AEFEA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -223,14 +243,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		348BBB431FB795C4009AEFEA /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				348BBB441FB795C4009AEFEA /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		348BBB481FB795C4009AEFEA /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
