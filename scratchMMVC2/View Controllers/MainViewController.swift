@@ -10,17 +10,39 @@ import UIKit
 
 class MainViewController: UIViewController {
 
-    override func viewDidLoad() {
+    // MARK: - Local variables and constants.
+
+    private let loader: ArchitectureLoading
+
+    // MARK: - Initialization.
+
+    init(loader: ArchitectureLoading) {
+        self.loader = loader
+
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("Clonk!")
+    }
+
+   override func viewDidLoad() {
         super.viewDidLoad()
+        print("Main view did load.")
+        view.backgroundColor = UIColor.yellow
 
-        view.backgroundColor = UIColor.cyan
-
-        let initialVC = MessageViewController(
+        let messageVC = MessageViewController(
             messageText: "Generate an iOS app architecture...", buttonText: "Go!")
-        initialVC.delegate = self
+        messageVC.delegate = self
+
+        transition(to: messageVC)
     }
 }
 
 extension MainViewController: MessageViewControllerDelegate {
+
+    func messageViewControllerActionButtonWasPressed(_ messageVC: MessageViewController) {
+        print("Action button pressed.")
+    }
 
 }

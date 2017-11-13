@@ -11,8 +11,9 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MessageViewController" customModule="scratchMMVC2" customModuleProvider="target">
             <connections>
-                <outlet property="button" destination="os9-fB-fi0" id="y0C-yV-qHf"/>
+                <outlet property="actionButton" destination="os9-fB-fi0" id="mZs-mF-AUi"/>
                 <outlet property="messageLabel" destination="2Dr-WT-zeb" id="4gb-7v-kwe"/>
+                <outlet property="view" destination="iN0-l3-epB" id="hAb-uG-Pb3"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -26,12 +27,15 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="os9-fB-fi0">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="os9-fB-fi0" userLabel="Action button">
                     <rect key="frame" x="164" y="352" width="46" height="30"/>
                     <state key="normal" title="Button"/>
+                    <connections>
+                        <action selector="action:" destination="-1" eventType="touchUpInside" id="1eU-cy-sBl"/>
+                    </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="backgroundColor" red="1" green="0.40223524305555558" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="os9-fB-fi0" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="JQM-8A-7Es"/>
                 <constraint firstItem="os9-fB-fi0" firstAttribute="top" secondItem="2Dr-WT-zeb" secondAttribute="bottom" constant="8" id="SNM-oY-vK7"/>
